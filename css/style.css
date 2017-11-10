@@ -6,6 +6,7 @@
 
 h1 {
     color: blue;
+    text-align: center;
 }
 
 .float-container {
@@ -78,8 +79,16 @@ h1 {
   }
 
   @media (max-width:500px){
-    .float-container {
+    .float-container .container2 .container21 {
       float: none;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .float-container .container3 .container31{
+      float: none;
+      width: 100%;
+      margin-top: 20px;
     }
   }
   
