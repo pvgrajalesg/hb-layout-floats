@@ -1,96 +1,86 @@
 * {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-    color: blue;
-    text-align: center;
+  color: blue;
+  text-align: center;
 }
 
 .float-container {
-    float: left;
-    max-width: 1024px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container1 {
+  margin-top: 20px;
+  background-color: green;
+  height: 80px;
+}
+
+.container2 .container{
+  width: 100%;
+  margin-top: 20px;
+  float: left;
+  overflow: hidden;
+  background-color: green;
+  margin-right: 20px;
+  width: calc(100%/2 - 20px/2);
+  height: 300px;
+}
+
+.container2 .container:last-child{
+  margin-right: 0px;
+}
+
+.container3 .container{
+  float: left;
+  overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+  background-color: green;
+  margin-right: 20px;
+  width: calc(100%/3 - 40px/3);
+  height: 120px;
+}
+
+.container3 .container:last-child{
+  margin-right: 0px;
+}
+
+.container4{
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  background-color: green;
+  height: 200px;
+}
+
+.container4 .container41{
+  background-color: blue;
+  margin: 0 auto;
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+@media (max-width:500px){
+  .container2 .container {
+    float: none;
     width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .float-container .container1 {
     margin-top: 20px;
-    background-color: green;
-    height: 80px;
   }
 
-  .float-container .container2 {
-    float: left;
-    overflow: hidden;
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .float-container .container2 .container21{
-    float: left;
-    background-color: green;
-    margin-right: 20px;
-    width: calc(100%/2 - 20px/2);
-    height: 300px;
-  }
-
-  .float-container .container2 .container21:last-child{
-    margin-right: 0px;
-  }
-
-  .float-container .container3 {
-    float: left;
-    overflow: hidden;
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .float-container .container3 .container31{
-    float: left;
-    background-color: green;
-    margin-right: 20px;
-    width: calc(100%/3 - 40px/3);
-    height: 120px;
-  }
-
-  .float-container .container3 .container31:last-child{
-    margin-right: 0px;
-  }
-
-  .float-container .container4{
-    float: left;
-    overflow: hidden;
+  .container3 .container{
+    float: none;
     width: 100%;
     margin-top: 20px;
-    background-color: green;
-    height: 200px;
   }
-
-  .float-container .container4 .container41{
-    background-color: blue;
-    margin: 0 auto;
-    height: 150px;
-    width: 150px;
-    margin-top: 20px;
-  }
-
-  @media (max-width:500px){
-    .float-container .container2 .container21 {
-      float: none;
-      width: 100%;
-      margin-top: 20px;
-    }
-
-    .float-container .container3 .container31{
-      float: none;
-      width: 100%;
-      margin-top: 20px;
-    }
-  }
+}
   
 
 
